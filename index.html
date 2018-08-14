@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body onload="calcReset()">
+    <div id="calculator">
+        <div id="calcwrapper">
+            <input id="calcinput" type="text" placeholder="0">
+            <div id="numberpadrow1">
+                <input class="num" type="button" value="7" onclick="document.getElementById('calcinput').value += '7'">
+                <input class="num" type="button" value="8" onclick="document.getElementById('calcinput').value += '8'">
+                <input class="num" type="button" value="9" onclick="document.getElementById('calcinput').value += '9'">
+                <input class="operator" type="button" value="/" onclick="document.getElementById('calcinput').value += '/'">
+            </div>
+            <div id="numberpadrow2">
+                <input class="num" type="button" value="4" onclick="document.getElementById('calcinput').value += '4'">
+                <input class="num" type="button" value="5" onclick="document.getElementById('calcinput').value += '5'">
+                <input class="num" type="button" value="6" onclick="document.getElementById('calcinput').value += '6'">
+                <input class="operator" type="button" value="*" onclick="document.getElementById('calcinput').value += '*'">
+            </div>
+            <div id="numberpadrow3">
+                <input class="num" type="button" value="1" onclick="document.getElementById('calcinput').value += '1'">
+                <input class="num" type="button" value="2" onclick="document.getElementById('calcinput').value += '2'">
+                <input class="num" type="button" value="3" onclick="document.getElementById('calcinput').value += '3'">
+                <input class="operator" type="button" value="-" onclick="document.getElementById('calcinput').value += '-'">
+            </div>
+            <div id="numberpadrow4">
+                <input class="num" type="button" value="0" onclick="document.getElementById('calcinput').value += '0'">
+                <input class="num" type="button" value="." onclick="document.getElementById('calcinput').value += '.'">
+                <input class="equate" type="button" value="=" onclick="equate()">
+                <input class="operator" type="button" value="+" onclick="document.getElementById('calcinput').value += '+'">
+            </div>
+            <div id="numberpadrow5">
+                <input type="button" value="CLEAR" onclick="document.getElementById('calcinput').value = ''">
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js">
+    </script>
+</body>
+
+</html>

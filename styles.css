@@ -1,0 +1,92 @@
+html{
+    font-size: 16px;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3ecf0;
+}
+
+#calculator {
+    width: 325px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 30px 0px 15px 0px;
+    background-color: #787879;
+
+
+}
+
+#numberpadrow1,
+#numberpadrow2,
+#numberpadrow3,
+#numberpadrow4,
+#numberpadrow5{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+#calcwrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+input[type="text"] {
+    margin-bottom: 10px;
+    padding: 6px;
+    font-size: 2rem;
+    font-weight: 500;
+    width: 95%;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: right;
+    background-color: #D7D9B1;
+}
+
+input[type="button"] {
+    margin: 3px;
+    width: 25%;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+input[type="button"]:focus,
+input[type="text"] {
+    outline: none;
+}
+
+input[type="button"]:active {
+    border: 2px solid black;
+}
+
+input[type="button"]:hover {}
+
+.num {
+    background-color: #84ACCE;
+    color: white;
+    font-weight: 900;
+}
+
+.operator {
+    background-color: #b43763;
+    color: white;
+    font-weight: 900;
+}
+
+.equate {
+    background-color: #DC965A;
+    color: white;
+    font-weight: 900;
+}
+
+input[value="CLEAR"]{
+    width: 100%;
+    background-color: rgba(103, 58, 119, 0.62);
+    color: white;
+    font-weight: 900;
+}
